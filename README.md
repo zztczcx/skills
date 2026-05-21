@@ -27,19 +27,19 @@ If you want to keep up with changes to these skills, and any new ones I create, 
 1. Run the skills installer:
 
 ```bash
-npx skills@latest add zztczcx/zztczcx-skills
+npx skills@latest add zztczcx/skills
 ```
 
 To install everything at once without prompts:
 
 ```bash
-npx skills@latest add zztczcx/zztczcx-skills --all
+npx skills@latest add zztczcx/skills --all
 ```
 
 To install a single skill globally (e.g. `to-spec`):
 
 ```bash
-npx skills@latest add zztczcx/zztczcx-skills -g --skill to-spec
+npx skills@latest add zztczcx/skills -g --skill to-spec
 ```
 
 2. Pick the skills you want, and which coding agents you want to install them on. **Make sure you select `/setup-matt-pocock-skills`**.
