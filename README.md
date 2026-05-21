@@ -140,6 +140,40 @@ And crucially, [`/improve-codebase-architecture`](./skills/engineering/improve-c
 
 Software engineering fundamentals matter more than ever. These skills are my best effort at condensing these fundamentals into repeatable practices, to help you ship the best apps of your career. Enjoy.
 
+## Feature Workflow: Which Skill Do I Use?
+
+Different skills serve different moments in the feature lifecycle. Pick based on where you are:
+
+```
+Idea → /grill-me or /grill-with-docs   (stress-test the idea)
+  ↓
+/to-spec <slug>                        (spec it: requirements → design → tasks)
+  ↓
+/tdd                                   (implement task-by-task with red-green-refactor)
+  ↓
+/diagnose                              (when something breaks)
+```
+
+### Choosing between `/to-spec`, `/to-prd`, and `/to-issues`
+
+| Skill | When to use | Output | Needs issue tracker? |
+|-------|-------------|--------|---------------------|
+| **`/to-spec`** | Starting a new feature (primary workflow) | `docs/specs/<slug>/` with requirements, design, tasks | No — all local markdown |
+| **`/to-prd`** | Need a PRD published to an issue tracker | Single PRD document on GitHub/GitLab | Yes |
+| **`/to-issues`** | Distributing work across multiple people/agents | Vertical-slice issues on the tracker | Yes |
+
+**Rule of thumb:**
+- No issue tracker or working solo/small team? → **`/to-spec`**
+- Have GitHub/GitLab and need to assign work? → **`/to-spec`** first, then **`/to-issues`** to break it into tickets
+- Just need a quick PRD on the tracker? → **`/to-prd`**
+
+### `/to-spec` format choice
+
+| Format | Best for | Files produced |
+|--------|----------|---------------|
+| `kiro` (default) | Most features — lean, 3 files | requirements.md, design.md, tasks.md |
+| `spec-kit` | Complex features needing research, contracts, data models | spec.md, plan.md, data-model.md, contracts/, research.md, tasks.md |
+
 ## Reference
 
 ### Engineering
