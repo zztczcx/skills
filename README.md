@@ -1,10 +1,10 @@
 <p>
-  <a href="https://www.aihero.dev/s/skills-newsletter">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://res.cloudinary.com/total-typescript/image/upload/v1777382277/skills-repo-dark_2x.png">
-      <source media="(prefers-color-scheme: light)" srcset="https://res.cloudinary.com/total-typescript/image/upload/v1777382277/skill-repo-light_2x.png">
-      <img alt="Skills" src="https://res.cloudinary.com/total-typescript/image/upload/v1777382277/skill-repo-light_2x.png" width="369">
-    </picture>
+  <a href="https://github.com/mattpocock">
+    <img src="https://github.com/mattpocock.png" width="48" height="48" style="border-radius:50%" alt="mattpocock" title="mattpocock (upstream)">
+  </a>
+  &nbsp;+&nbsp;
+  <a href="https://github.com/zztczcx">
+    <img src="https://github.com/zztczcx.png" width="48" height="48" style="border-radius:50%" alt="zztczcx" title="zztczcx (this fork)">
   </a>
 </p>
 
@@ -24,20 +24,42 @@ If you want to keep up with changes to these skills, and any new ones I create, 
 
 ## Quickstart (30-second setup)
 
-1. Run the skills.sh installer:
+1. Run the skills installer:
 
 ```bash
-npx skills@latest add mattpocock/skills
+npx skills@latest add zztczcx/zztczcx-skills
+```
+
+To install everything at once without prompts:
+
+```bash
+npx skills@latest add zztczcx/zztczcx-skills --all
+```
+
+To install a single skill globally (e.g. `to-spec`):
+
+```bash
+npx skills@latest add zztczcx/zztczcx-skills -g --skill to-spec
 ```
 
 2. Pick the skills you want, and which coding agents you want to install them on. **Make sure you select `/setup-matt-pocock-skills`**.
 
 3. Run `/setup-matt-pocock-skills` in your agent. It will:
-   - Ask you which issue tracker you want to use (GitHub, Linear, or local files)
+   - Ask you which issue tracker you want to use (GitHub, GitLab, Gitee, or local files)
    - Ask you what labels you apply to tickets when you triage them (`/triage` uses labels)
    - Ask you where you want to save any docs we create
 
-4. Bam - you're ready to go.
+4. You're ready to go.
+
+### Installing from a local clone
+
+If you haven't pushed to a remote yet, use the link script instead:
+
+```bash
+bash scripts/link-skills.sh
+```
+
+This symlinks all skills into `~/.claude/skills/` and picks up new skills automatically on re-run.
 
 ## Why These Skills Exist
 
